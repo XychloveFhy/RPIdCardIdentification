@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083AD1762241D0D9009DB926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 083F022E223F76A800AA3A1C /* AppDelegate.m */; };
+		083AD1792241D24B009DB926 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 083F023C223F76AA00AA3A1C /* main.m */; };
+		083AD1982241DC8F009DB926 /* IDInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083AD17D2241DC8F009DB926 /* IDInfoViewController.xib */; };
+		083AD1992241DC8F009DB926 /* IDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD17E2241DC8F009DB926 /* IDInfoViewController.m */; };
+		083AD19A2241DC8F009DB926 /* AVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD17F2241DC8F009DB926 /* AVCaptureViewController.m */; };
+		083AD19C2241DC8F009DB926 /* IDAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD1812241DC8F009DB926 /* IDAuthViewController.m */; };
+		083AD19D2241DC8F009DB926 /* IDAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 083AD1822241DC8F009DB926 /* IDAuthViewController.xib */; };
+		083AD19E2241DC8F009DB926 /* IDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD1862241DC8F009DB926 /* IDCardScaningView.m */; };
+		083AD19F2241DC8F009DB926 /* IDInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD1892241DC8F009DB926 /* IDInfo.m */; };
+		083AD1A02241DC8F009DB926 /* UIAlertController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD18E2241DC8F009DB926 /* UIAlertController+Extend.m */; };
+		083AD1A12241DC8F009DB926 /* RectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD18F2241DC8F009DB926 /* RectManager.m */; };
+		083AD1A22241DC8F009DB926 /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 083AD1912241DC8F009DB926 /* libexidcardios.a */; };
+		083AD1A32241DC8F009DB926 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 083AD1932241DC8F009DB926 /* zocr0.lib */; };
+		083AD1A42241DC8F009DB926 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 083AD1962241DC8F009DB926 /* UIImage+Extend.m */; };
+		083F0232223F76A800AA3A1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083F0231223F76A800AA3A1C /* ViewController.m */; };
+		083F0235223F76A800AA3A1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083F0233223F76A800AA3A1C /* Main.storyboard */; };
+		083F0237223F76AA00AA3A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083F0236223F76AA00AA3A1C /* Assets.xcassets */; };
+		083F023A223F76AA00AA3A1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083F0238223F76AA00AA3A1C /* LaunchScreen.storyboard */; };
+		083F0247223F76AB00AA3A1C /* RPIdCardIdentificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 083F0246223F76AB00AA3A1C /* RPIdCardIdentificationTests.m */; };
+		083F0252223F76AB00AA3A1C /* RPIdCardIdentificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 083F0251223F76AB00AA3A1C /* RPIdCardIdentificationUITests.m */; };
+		08CA9F8F22422F2C00C4834E /* libexidcardios.a in Resources */ = {isa = PBXBuildFile; fileRef = 083AD1912241DC8F009DB926 /* libexidcardios.a */; };
+		08CA9F922242321700C4834E /* ReverseAVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA9F912242321700C4834E /* ReverseAVCaptureViewController.m */; };
+		08CA9F952242331500C4834E /* ReverseIDCardScaningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CA9F942242331500C4834E /* ReverseIDCardScaningView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		083F0243223F76AB00AA3A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083F0222223F76A800AA3A1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083F0229223F76A800AA3A1C;
+			remoteInfo = RPIdCardIdentification;
+		};
+		083F024E223F76AB00AA3A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 083F0222223F76A800AA3A1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 083F0229223F76A800AA3A1C;
+			remoteInfo = RPIdCardIdentification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083AD17C2241DC8F009DB926 /* IDAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDAuthViewController.h; sourceTree = "<group>"; };
+		083AD17D2241DC8F009DB926 /* IDInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDInfoViewController.xib; sourceTree = "<group>"; };
+		083AD17E2241DC8F009DB926 /* IDInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDInfoViewController.m; sourceTree = "<group>"; };
+		083AD17F2241DC8F009DB926 /* AVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCaptureViewController.m; sourceTree = "<group>"; };
+		083AD1812241DC8F009DB926 /* IDAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDAuthViewController.m; sourceTree = "<group>"; };
+		083AD1822241DC8F009DB926 /* IDAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDAuthViewController.xib; sourceTree = "<group>"; };
+		083AD1832241DC8F009DB926 /* AVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCaptureViewController.h; sourceTree = "<group>"; };
+		083AD1842241DC8F009DB926 /* IDInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDInfoViewController.h; sourceTree = "<group>"; };
+		083AD1862241DC8F009DB926 /* IDCardScaningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardScaningView.m; sourceTree = "<group>"; };
+		083AD1872241DC8F009DB926 /* IDCardScaningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardScaningView.h; sourceTree = "<group>"; };
+		083AD1892241DC8F009DB926 /* IDInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDInfo.m; sourceTree = "<group>"; };
+		083AD18A2241DC8F009DB926 /* IDInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDInfo.h; sourceTree = "<group>"; };
+		083AD18C2241DC8F009DB926 /* RectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectManager.h; sourceTree = "<group>"; };
+		083AD18D2241DC8F009DB926 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
+		083AD18E2241DC8F009DB926 /* UIAlertController+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extend.m"; sourceTree = "<group>"; };
+		083AD18F2241DC8F009DB926 /* RectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectManager.m; sourceTree = "<group>"; };
+		083AD1912241DC8F009DB926 /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		083AD1932241DC8F009DB926 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		083AD1942241DC8F009DB926 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		083AD1952241DC8F009DB926 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		083AD1962241DC8F009DB926 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
+		083AD1972241DC8F009DB926 /* UIAlertController+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Extend.h"; sourceTree = "<group>"; };
+		083F022A223F76A800AA3A1C /* RPIdCardIdentification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPIdCardIdentification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		083F022D223F76A800AA3A1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		083F022E223F76A800AA3A1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		083F0230223F76A800AA3A1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		083F0231223F76A800AA3A1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		083F0234223F76A800AA3A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		083F0236223F76AA00AA3A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		083F0239223F76AA00AA3A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		083F023B223F76AA00AA3A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083F023C223F76AA00AA3A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		083F0242223F76AB00AA3A1C /* RPIdCardIdentificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPIdCardIdentificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		083F0246223F76AB00AA3A1C /* RPIdCardIdentificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPIdCardIdentificationTests.m; sourceTree = "<group>"; };
+		083F0248223F76AB00AA3A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		083F024D223F76AB00AA3A1C /* RPIdCardIdentificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPIdCardIdentificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		083F0251223F76AB00AA3A1C /* RPIdCardIdentificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPIdCardIdentificationUITests.m; sourceTree = "<group>"; };
+		083F0253223F76AB00AA3A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CA9F902242321700C4834E /* ReverseAVCaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseAVCaptureViewController.h; sourceTree = "<group>"; };
+		08CA9F912242321700C4834E /* ReverseAVCaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseAVCaptureViewController.m; sourceTree = "<group>"; };
+		08CA9F932242331500C4834E /* ReverseIDCardScaningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseIDCardScaningView.h; sourceTree = "<group>"; };
+		08CA9F942242331500C4834E /* ReverseIDCardScaningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseIDCardScaningView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		083F0227223F76A800AA3A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083AD1A22241DC8F009DB926 /* libexidcardios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083F023F223F76AB00AA3A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083F024A223F76AB00AA3A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083AD17B2241DC8F009DB926 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				083AD17C2241DC8F009DB926 /* IDAuthViewController.h */,
+				083AD1812241DC8F009DB926 /* IDAuthViewController.m */,
+				083AD1822241DC8F009DB926 /* IDAuthViewController.xib */,
+				083AD1842241DC8F009DB926 /* IDInfoViewController.h */,
+				083AD17E2241DC8F009DB926 /* IDInfoViewController.m */,
+				083AD17D2241DC8F009DB926 /* IDInfoViewController.xib */,
+				083AD1832241DC8F009DB926 /* AVCaptureViewController.h */,
+				083AD17F2241DC8F009DB926 /* AVCaptureViewController.m */,
+				08CA9F902242321700C4834E /* ReverseAVCaptureViewController.h */,
+				08CA9F912242321700C4834E /* ReverseAVCaptureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		083AD1852241DC8F009DB926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				083AD1872241DC8F009DB926 /* IDCardScaningView.h */,
+				083AD1862241DC8F009DB926 /* IDCardScaningView.m */,
+				08CA9F932242331500C4834E /* ReverseIDCardScaningView.h */,
+				08CA9F942242331500C4834E /* ReverseIDCardScaningView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		083AD1882241DC8F009DB926 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				083AD18A2241DC8F009DB926 /* IDInfo.h */,
+				083AD1892241DC8F009DB926 /* IDInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		083AD18B2241DC8F009DB926 /* idCardTool */ = {
+			isa = PBXGroup;
+			children = (
+				083AD18C2241DC8F009DB926 /* RectManager.h */,
+				083AD18F2241DC8F009DB926 /* RectManager.m */,
+				083AD18D2241DC8F009DB926 /* UIImage+Extend.h */,
+				083AD1962241DC8F009DB926 /* UIImage+Extend.m */,
+				083AD1972241DC8F009DB926 /* UIAlertController+Extend.h */,
+				083AD18E2241DC8F009DB926 /* UIAlertController+Extend.m */,
+				083AD1902241DC8F009DB926 /* libexidcard */,
+			);
+			path = idCardTool;
+			sourceTree = "<group>";
+		};
+		083AD1902241DC8F009DB926 /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				083AD1912241DC8F009DB926 /* libexidcardios.a */,
+				083AD1922241DC8F009DB926 /* dicts */,
+				083AD1942241DC8F009DB926 /* commondef.h */,
+				083AD1952241DC8F009DB926 /* excards.h */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		083AD1922241DC8F009DB926 /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				083AD1932241DC8F009DB926 /* zocr0.lib */,
+			);
+			path = dicts;
+			sourceTree = "<group>";
+		};
+		083F0221223F76A800AA3A1C = {
+			isa = PBXGroup;
+			children = (
+				083F022C223F76A800AA3A1C /* RPIdCardIdentification */,
+				083F0245223F76AB00AA3A1C /* RPIdCardIdentificationTests */,
+				083F0250223F76AB00AA3A1C /* RPIdCardIdentificationUITests */,
+				083F022B223F76A800AA3A1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		083F022B223F76A800AA3A1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				083F022A223F76A800AA3A1C /* RPIdCardIdentification.app */,
+				083F0242223F76AB00AA3A1C /* RPIdCardIdentificationTests.xctest */,
+				083F024D223F76AB00AA3A1C /* RPIdCardIdentificationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		083F022C223F76A800AA3A1C /* RPIdCardIdentification */ = {
+			isa = PBXGroup;
+			children = (
+				083F022D223F76A800AA3A1C /* AppDelegate.h */,
+				083F022E223F76A800AA3A1C /* AppDelegate.m */,
+				083F0230223F76A800AA3A1C /* ViewController.h */,
+				083F0231223F76A800AA3A1C /* ViewController.m */,
+				083AD17B2241DC8F009DB926 /* Controller */,
+				083AD1882241DC8F009DB926 /* Model */,
+				083AD1852241DC8F009DB926 /* View */,
+				083AD18B2241DC8F009DB926 /* idCardTool */,
+				083F0233223F76A800AA3A1C /* Main.storyboard */,
+				083F0236223F76AA00AA3A1C /* Assets.xcassets */,
+				083F0238223F76AA00AA3A1C /* LaunchScreen.storyboard */,
+				083F023B223F76AA00AA3A1C /* Info.plist */,
+				083F023C223F76AA00AA3A1C /* main.m */,
+			);
+			path = RPIdCardIdentification;
+			sourceTree = "<group>";
+		};
+		083F0245223F76AB00AA3A1C /* RPIdCardIdentificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				083F0246223F76AB00AA3A1C /* RPIdCardIdentificationTests.m */,
+				083F0248223F76AB00AA3A1C /* Info.plist */,
+			);
+			path = RPIdCardIdentificationTests;
+			sourceTree = "<group>";
+		};
+		083F0250223F76AB00AA3A1C /* RPIdCardIdentificationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				083F0251223F76AB00AA3A1C /* RPIdCardIdentificationUITests.m */,
+				083F0253223F76AB00AA3A1C /* Info.plist */,
+			);
+			path = RPIdCardIdentificationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		083F0229223F76A800AA3A1C /* RPIdCardIdentification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083F0256223F76AB00AA3A1C /* Build configuration list for PBXNativeTarget "RPIdCardIdentification" */;
+			buildPhases = (
+				083F0226223F76A800AA3A1C /* Sources */,
+				083F0227223F76A800AA3A1C /* Frameworks */,
+				083F0228223F76A800AA3A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPIdCardIdentification;
+			productName = RPIdCardIdentification;
+			productReference = 083F022A223F76A800AA3A1C /* RPIdCardIdentification.app */;
+			productType = "com.apple.product-type.application";
+		};
+		083F0241223F76AB00AA3A1C /* RPIdCardIdentificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083F0259223F76AB00AA3A1C /* Build configuration list for PBXNativeTarget "RPIdCardIdentificationTests" */;
+			buildPhases = (
+				083F023E223F76AB00AA3A1C /* Sources */,
+				083F023F223F76AB00AA3A1C /* Frameworks */,
+				083F0240223F76AB00AA3A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				083F0244223F76AB00AA3A1C /* PBXTargetDependency */,
+			);
+			name = RPIdCardIdentificationTests;
+			productName = RPIdCardIdentificationTests;
+			productReference = 083F0242223F76AB00AA3A1C /* RPIdCardIdentificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		083F024C223F76AB00AA3A1C /* RPIdCardIdentificationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 083F025C223F76AB00AA3A1C /* Build configuration list for PBXNativeTarget "RPIdCardIdentificationUITests" */;
+			buildPhases = (
+				083F0249223F76AB00AA3A1C /* Sources */,
+				083F024A223F76AB00AA3A1C /* Frameworks */,
+				083F024B223F76AB00AA3A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				083F024F223F76AB00AA3A1C /* PBXTargetDependency */,
+			);
+			name = RPIdCardIdentificationUITests;
+			productName = RPIdCardIdentificationUITests;
+			productReference = 083F024D223F76AB00AA3A1C /* RPIdCardIdentificationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		083F0222223F76A800AA3A1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = rpweng;
+				TargetAttributes = {
+					083F0229223F76A800AA3A1C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					083F0241223F76AB00AA3A1C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 083F0229223F76A800AA3A1C;
+					};
+					083F024C223F76AB00AA3A1C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 083F0229223F76A800AA3A1C;
+					};
+				};
+			};
+			buildConfigurationList = 083F0225223F76A800AA3A1C /* Build configuration list for PBXProject "RPIdCardIdentification" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 083F0221223F76A800AA3A1C;
+			productRefGroup = 083F022B223F76A800AA3A1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				083F0229223F76A800AA3A1C /* RPIdCardIdentification */,
+				083F0241223F76AB00AA3A1C /* RPIdCardIdentificationTests */,
+				083F024C223F76AB00AA3A1C /* RPIdCardIdentificationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		083F0228223F76A800AA3A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CA9F8F22422F2C00C4834E /* libexidcardios.a in Resources */,
+				083F023A223F76AA00AA3A1C /* LaunchScreen.storyboard in Resources */,
+				083AD1A32241DC8F009DB926 /* zocr0.lib in Resources */,
+				083AD19D2241DC8F009DB926 /* IDAuthViewController.xib in Resources */,
+				083AD1982241DC8F009DB926 /* IDInfoViewController.xib in Resources */,
+				083F0237223F76AA00AA3A1C /* Assets.xcassets in Resources */,
+				083F0235223F76A800AA3A1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083F0240223F76AB00AA3A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083F024B223F76AB00AA3A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		083F0226223F76A800AA3A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083AD1792241D24B009DB926 /* main.m in Sources */,
+				083AD1A42241DC8F009DB926 /* UIImage+Extend.m in Sources */,
+				08CA9F952242331500C4834E /* ReverseIDCardScaningView.m in Sources */,
+				08CA9F922242321700C4834E /* ReverseAVCaptureViewController.m in Sources */,
+				083AD1A12241DC8F009DB926 /* RectManager.m in Sources */,
+				083AD19A2241DC8F009DB926 /* AVCaptureViewController.m in Sources */,
+				083AD19E2241DC8F009DB926 /* IDCardScaningView.m in Sources */,
+				083AD1992241DC8F009DB926 /* IDInfoViewController.m in Sources */,
+				083AD19F2241DC8F009DB926 /* IDInfo.m in Sources */,
+				083AD1762241D0D9009DB926 /* AppDelegate.m in Sources */,
+				083F0232223F76A800AA3A1C /* ViewController.m in Sources */,
+				083AD1A02241DC8F009DB926 /* UIAlertController+Extend.m in Sources */,
+				083AD19C2241DC8F009DB926 /* IDAuthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083F023E223F76AB00AA3A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F0247223F76AB00AA3A1C /* RPIdCardIdentificationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		083F0249223F76AB00AA3A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				083F0252223F76AB00AA3A1C /* RPIdCardIdentificationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		083F0244223F76AB00AA3A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083F0229223F76A800AA3A1C /* RPIdCardIdentification */;
+			targetProxy = 083F0243223F76AB00AA3A1C /* PBXContainerItemProxy */;
+		};
+		083F024F223F76AB00AA3A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 083F0229223F76A800AA3A1C /* RPIdCardIdentification */;
+			targetProxy = 083F024E223F76AB00AA3A1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		083F0233223F76A800AA3A1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				083F0234223F76A800AA3A1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		083F0238223F76AA00AA3A1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				083F0239223F76AA00AA3A1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		083F0254223F76AB00AA3A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		083F0255223F76AB00AA3A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		083F0257223F76AB00AA3A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6MK7U7JC4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RPIdCardIdentification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RPIdCardIdentification/idCardTool/libexidcard",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpweng.RPIdCardIdentification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		083F0258223F76AB00AA3A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6MK7U7JC4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = RPIdCardIdentification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RPIdCardIdentification/idCardTool/libexidcard",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpweng.RPIdCardIdentification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		083F025A223F76AB00AA3A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YUADNPV9U;
+				INFOPLIST_FILE = RPIdCardIdentificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpweng.RPIdCardIdentificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPIdCardIdentification.app/RPIdCardIdentification";
+			};
+			name = Debug;
+		};
+		083F025B223F76AB00AA3A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YUADNPV9U;
+				INFOPLIST_FILE = RPIdCardIdentificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpweng.RPIdCardIdentificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPIdCardIdentification.app/RPIdCardIdentification";
+			};
+			name = Release;
+		};
+		083F025D223F76AB00AA3A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YUADNPV9U;
+				INFOPLIST_FILE = RPIdCardIdentificationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpweng.RPIdCardIdentificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPIdCardIdentification;
+			};
+			name = Debug;
+		};
+		083F025E223F76AB00AA3A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YUADNPV9U;
+				INFOPLIST_FILE = RPIdCardIdentificationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpweng.RPIdCardIdentificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPIdCardIdentification;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		083F0225223F76A800AA3A1C /* Build configuration list for PBXProject "RPIdCardIdentification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083F0254223F76AB00AA3A1C /* Debug */,
+				083F0255223F76AB00AA3A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083F0256223F76AB00AA3A1C /* Build configuration list for PBXNativeTarget "RPIdCardIdentification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083F0257223F76AB00AA3A1C /* Debug */,
+				083F0258223F76AB00AA3A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083F0259223F76AB00AA3A1C /* Build configuration list for PBXNativeTarget "RPIdCardIdentificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083F025A223F76AB00AA3A1C /* Debug */,
+				083F025B223F76AB00AA3A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		083F025C223F76AB00AA3A1C /* Build configuration list for PBXNativeTarget "RPIdCardIdentificationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083F025D223F76AB00AA3A1C /* Debug */,
+				083F025E223F76AB00AA3A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 083F0222223F76A800AA3A1C /* Project object */;
+}

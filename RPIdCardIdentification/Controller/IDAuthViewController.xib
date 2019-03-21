@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDAuthViewController">
+            <connections>
+                <outlet property="view" destination="Pqb-LG-Bet" id="g49-nZ-Rgw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Pqb-LG-Bet" customClass="IDCardScaningView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请准备好您的身份证原件" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqu-Pu-Hn6">
+                    <rect key="frame" x="30" y="84" width="315" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.48238962889999998" green="0.47837376590000003" blue="0.48240691419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idcard_first" translatesAutoresizingMaskIntoConstraints="NO" id="MiO-Sb-AcN">
+                    <rect key="frame" x="30" y="204.5" width="315" height="200.5"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="MiO-Sb-AcN" secondAttribute="height" multiplier="314:200" id="A9q-NM-80O"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9g-Fq-Dke">
+                    <rect key="frame" x="30" y="465" width="315" height="41.5"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.28627450980392155" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="d9g-Fq-Dke" secondAttribute="height" multiplier="343:45" constant="-1.3222222222221944" id="Mp4-G4-GRa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="开始识别(正面)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="shoot:" destination="-1" eventType="touchUpInside" id="cPc-xb-M1r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uk-wA-RzD">
+                    <rect key="frame" x="30" y="526.5" width="315" height="41.5"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6uk-wA-RzD" secondAttribute="height" multiplier="343:45" constant="-1.3222222222221944" id="igY-cu-qGf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="开始识别(反面)">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="shootAction:" destination="-1" eventType="touchUpInside" id="UuU-Oo-8si"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息仅仅用于身份验证，保障您的信息安全" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuV-15-Zna">
+                    <rect key="frame" x="30" y="578" width="315" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="p0g-7T-h5J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Aqu-Pu-Hn6" firstAttribute="trailing" secondItem="d9g-Fq-Dke" secondAttribute="trailing" id="19k-oO-ciJ"/>
+                <constraint firstItem="6uk-wA-RzD" firstAttribute="trailing" secondItem="d9g-Fq-Dke" secondAttribute="trailing" id="8ta-ek-zed"/>
+                <constraint firstItem="6uk-wA-RzD" firstAttribute="top" secondItem="d9g-Fq-Dke" secondAttribute="bottom" constant="20" id="Jsv-GK-qCN"/>
+                <constraint firstItem="MiO-Sb-AcN" firstAttribute="top" secondItem="Aqu-Pu-Hn6" secondAttribute="bottom" constant="100" id="KWS-la-oT6"/>
+                <constraint firstItem="Aqu-Pu-Hn6" firstAttribute="leading" secondItem="MiO-Sb-AcN" secondAttribute="leading" id="N3O-t6-EDU"/>
+                <constraint firstItem="Aqu-Pu-Hn6" firstAttribute="trailing" secondItem="MiO-Sb-AcN" secondAttribute="trailing" id="Qp4-an-ffj"/>
+                <constraint firstItem="Aqu-Pu-Hn6" firstAttribute="leading" secondItem="d9g-Fq-Dke" secondAttribute="leading" id="T9m-tC-iuI"/>
+                <constraint firstItem="FuV-15-Zna" firstAttribute="top" secondItem="6uk-wA-RzD" secondAttribute="bottom" constant="10" id="WcW-fo-uUC"/>
+                <constraint firstItem="Aqu-Pu-Hn6" firstAttribute="top" secondItem="Pqb-LG-Bet" secondAttribute="top" constant="84" id="aZz-1d-OY2"/>
+                <constraint firstItem="MiO-Sb-AcN" firstAttribute="leading" secondItem="Pqb-LG-Bet" secondAttribute="leading" constant="30" id="c9H-rM-PEn"/>
+                <constraint firstItem="6uk-wA-RzD" firstAttribute="width" secondItem="6uk-wA-RzD" secondAttribute="height" multiplier="343:45" constant="-1.3222222222221944" id="dNr-dT-wkd"/>
+                <constraint firstItem="d9g-Fq-Dke" firstAttribute="top" secondItem="MiO-Sb-AcN" secondAttribute="bottom" constant="60" id="diu-sw-rIP"/>
+                <constraint firstItem="FuV-15-Zna" firstAttribute="leading" secondItem="d9g-Fq-Dke" secondAttribute="leading" id="hsd-w2-ZJw"/>
+                <constraint firstItem="6uk-wA-RzD" firstAttribute="leading" secondItem="d9g-Fq-Dke" secondAttribute="leading" id="iJk-4q-woE"/>
+                <constraint firstItem="FuV-15-Zna" firstAttribute="trailing" secondItem="d9g-Fq-Dke" secondAttribute="trailing" id="kpj-Dm-2yS"/>
+                <constraint firstAttribute="trailing" secondItem="MiO-Sb-AcN" secondAttribute="trailing" constant="30" id="oE4-OA-C26"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="m6a-MC-MU8"/>
+            <point key="canvasLocation" x="-513.5" y="-226.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="idcard_first" width="314" height="200"/>
+    </resources>
+</document>
